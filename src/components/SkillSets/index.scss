@@ -1,0 +1,113 @@
+@use '../../globalStyles/mixins' as m;
+
+.skill-sets-container {
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+  user-select: none;
+
+  .description {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: m.color(grey-light);
+
+    .level {
+      @include m.tag-yellow;
+      display: inline-block;
+      text-align: center;
+      background: m.color(primary-light);
+      color: m.color(primary);
+      border: 1px solid m.color(primary);
+    }
+
+    .expert {
+      @include m.expert;
+    }
+
+    &:before {
+      content: '';
+      width: 5px;
+      height: 100%;
+      background: m.color(grey-4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+
+    .description-item {
+      color: m.color(grey-10);
+      font-size: m.size(small-0);
+      margin-bottom: 0.125rem;
+    }
+  }
+
+  .skill-set {
+    margin-bottom: 2.5rem;
+
+    .category {
+      position: relative;
+      display: inline-block;
+      font-size: m.size(large-2);
+      font-weight: m.weight(semi-bold);
+      margin-bottom: 0.875rem;
+
+      &::after {
+        @include m.underline;
+      }
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.625rem;
+      padding-left: 1.5rem;
+
+      .item {
+        margin-right: 1rem;
+
+        .skill {
+          display: inline-block;
+          margin-right: 0.25rem;
+        }
+
+        .level {
+          @include m.tag-yellow;
+          border: 1px solid m.color(primary);
+          display: inline;
+        }
+
+        .expert {
+          @include m.expert;
+        }
+      }
+    }
+  }
+}
+
+@include m.mobile-down {
+  .skill-sets-container {
+    margin-bottom: 1rem;
+
+    .skill-set .items {
+      .item {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include m.mobile {
+  .skill-sets-container {
+    margin-bottom: 1rem;
+
+    .skill-set .items {
+      .item {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+      }
+    }
+  }
+}

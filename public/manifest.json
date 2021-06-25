@@ -1,0 +1,12 @@
+{
+  "short_name": "ddongule",
+  "name": "ddongule's portfolio",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}

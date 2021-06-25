@@ -1,0 +1,24 @@
+@use '../../../globalStyles/mixins' as m;
+
+.subtitle {
+  user-select: none;
+  display: flex;
+  margin-bottom: 1.375rem;
+
+  .subtitle__h3 {
+    font-size: m.size(large-6);
+    font-weight: m.weight(bold);
+  }
+}
+
+@include m.mobile-down {
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+}
+
+@include m.mobile {
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+}

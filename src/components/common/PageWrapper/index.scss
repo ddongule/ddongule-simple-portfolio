@@ -1,0 +1,31 @@
+@use '../../../globalStyles/mixins' as m;
+
+.page {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  height: 100%;
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+}
+
+@include m.mobile-down {
+  .page {
+    .page-container {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@include m.mobile {
+  .page {
+    .page-container {
+      padding: 0 1rem;
+    }
+  }
+}

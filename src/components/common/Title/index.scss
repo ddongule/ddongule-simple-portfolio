@@ -1,0 +1,34 @@
+@use '../../../globalStyles/mixins' as m;
+
+.title {
+  user-select: none;
+  margin: 3.5rem 0 4.5rem 0;
+
+  .title__h1 {
+    font-size: m.size(huge-0);
+    font-weight: m.weight(bold);
+    text-align: center;
+  }
+}
+
+@include m.mobile-down {
+  .title {
+    user-select: none;
+    margin: 1.5rem 0;
+
+    .title__h1 {
+      font-size: m.size(large-10);
+    }
+  }
+}
+
+@include m.mobile {
+  .title {
+    user-select: none;
+    margin: 1.5rem 0;
+
+    .title__h1 {
+      font-size: m.size(large-10);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use '../../globalStyles/mixins' as m;
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  .footer-contents {
+    font-size: m.size(small-1);
+    color: m.color(main);
+    transition: all 200ms ease-in-out;
+
+    .icon {
+      color: m.color(grey-4);
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      color: m.color(primary);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.theme-container {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    width: 1.625rem;
+    height: 1.625rem;
+
+    background-image: url('../../assets/static/images/half-moon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}

@@ -1,0 +1,112 @@
+@use '../../../globalStyles/mixins' as m;
+@use '../../../globalStyles/variables' as v;
+
+.timestamp {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  white-space: pre-line;
+
+  &:nth-child(odd) {
+    position: relative;
+    padding-right: 2rem;
+    border-right: 2px solid m.color(grey-4);
+    text-align: right;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 2rem;
+      right: -0.83rem;
+      background: #fff;
+      border-radius: v.$border-radius;
+      transform: translateX(-50%);
+      border: 2px solid m.color(grey-8);
+      align-self: center;
+      width: 8px;
+      height: 10px;
+      z-index: 1;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 2.35rem;
+      right: -0.05rem;
+      background: #fff;
+      border: 1px solid m.color(grey-8);
+      align-self: center;
+      width: 16px;
+    }
+
+    &:first-child::after {
+      animation: blink 1s ease-in-out infinite;
+    }
+  }
+
+  &:nth-child(even) {
+    padding-top: 5.5rem;
+    padding-left: 2rem;
+    position: relative;
+    align-items: flex-start;
+    margin: 1rem 0;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 7rem;
+      left: -0.05rem;
+      background: m.color(white);
+      border-radius: v.$border-radius;
+      transform: translateX(-50%);
+      border: 2px solid m.color(grey-8);
+      align-self: center;
+      width: 8px;
+      height: 10px;
+      z-index: 1;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 7.4rem;
+      left: -0.05rem;
+      background: #fff;
+      border: 1px solid m.color(grey-8);
+      align-self: center;
+      width: 16px;
+    }
+  }
+
+  .timestamp__main {
+    .when {
+      font-size: m.size(small-0);
+      color: m.color(grey-11);
+    }
+
+    .title {
+      font-weight: m.weight(medium);
+      margin: unset;
+    }
+  }
+
+  .timestamp__details {
+    margin-top: 0.5rem;
+    color: m.color(grey-8);
+    font-size: m.size(small-0);
+    display: flex;
+    line-height: 1.1;
+    justify-content: flex-end;
+
+    .tags {
+      @include m.tech-tags;
+      font-size: m.size(small-2);
+      padding: 0.11rem 0.25rem;
+      margin: 0 0 0 0.225rem;
+    }
+  }
+
+  .timestamp__description {
+    display: none;
+  }
+}

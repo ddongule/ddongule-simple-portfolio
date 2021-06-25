@@ -1,0 +1,22 @@
+@use '../../globalStyles/mixins' as m;
+
+.timestamp-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 1rem;
+  margin: 1rem 0 5rem 0;
+}
+
+@include m.mobile-down {
+  .timestamp-container {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@include m.mobile {
+  .timestamp-container {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+  }
+}

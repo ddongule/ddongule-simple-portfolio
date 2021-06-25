@@ -1,0 +1,151 @@
+@import './variables';
+
+@function size($key) {
+  @if map-has-key($size, $key) {
+    @return map-get($size, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $size!";
+  @return null;
+}
+
+@function weight($key) {
+  @if map-has-key($weight, $key) {
+    @return map-get($weight, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $weight!";
+  @return null;
+}
+
+@function color($key) {
+  @if map-has-key($color, $key) {
+    @return map-get($color, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors!";
+  @return null;
+}
+
+@function background-color($key) {
+  @if map-has-key($background-color, $key) {
+    @return map-get($background-color, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $background-colors!";
+  @return null;
+}
+
+@function breakpoints($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return map-get($breakpoints, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $breakpoints!";
+  @return null;
+}
+
+@mixin tag-yellow {
+  display: flex;
+  width: fit-content;
+  background: color(primary-opacity);
+  color: color(primary);
+  border-radius: $border-radius;
+  font-size: size(small-1);
+  font-weight: weight(semi-bold);
+  padding: 0 5px;
+  margin-right: 0.5rem;
+  min-width: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin subtitle {
+  border-radius: 0.25rem;
+  color: #ffaf19;
+  width: fit-content;
+  padding: 0 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.775rem;
+  border: 1px solid #ffaf19;
+  box-shadow: 1px 1px 1px;
+}
+
+@mixin underline {
+  content: '';
+  width: 100%;
+  height: 6px;
+  background: color(primary);
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@mixin expert {
+  border: 1px solid color(primary-emphasis);
+  color: color(primary-emphasis);
+  background: color(primary-emphasis-opacity);
+}
+
+@mixin tech-tags {
+  width: fit-content;
+  padding: 0.1rem 0.25rem;
+  border-radius: $border-radius;
+  border: 1px solid color(grey-8);
+  color: color(grey-8);
+  font-size: size(small-1);
+  line-height: 1;
+  height: fit-content;
+  margin: 0.225rem 0.225rem 0 0;
+}
+
+@keyframes blink {
+  50% {
+    border-color: color(primary);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 200px;
+  }
+  100% {
+    background-position: 400px;
+  }
+}
+
+@mixin mobile-down {
+  @media (max-width: breakpoints(mobile)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: breakpoints(mobile)) and (max-width: breakpoints(tablet) - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: breakpoints(tablet)) and (max-width: breakpoints(desktop) - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: breakpoints(desktop)) and (max-width: breakpoints(big-desktop) - 1px) {
+    @content;
+  }
+}
+
+@mixin big-desktop {
+  @media (min-width: breakpoints(big-desktop)) {
+    @content;
+  }
+}
