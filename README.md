@@ -1,8 +1,6 @@
 <div align="center">
 <img src="./public/readme/images/ddongule-simple-portfolio.png" alt="logo"/>
 </div>
-
-<br />
 <br />
 <div align="center">
 <a href=''>
@@ -10,7 +8,6 @@
   <img src='https://img.shields.io/badge/version-1.0.0-yellow' alt='license' />
  </a>
 </div>
-<br />
 
 <div align="center">✨ Make your own portfolio! Easy and Fast. ✨</div>
 <br />
