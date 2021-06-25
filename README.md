@@ -95,7 +95,7 @@ $ cd ddongule-simple-portfolio
       }
     ```
 
-### 1. Main Title Section.
+### 👉 1. Main Title Section.
 
   <img src="./public/readme/images/mainTitle.png" alt="main title"/>
 
@@ -109,12 +109,15 @@ $ cd ddongule-simple-portfolio
       }
   ```
 
-### 2. About Me Section.
+### 👉 2. About Me Section.
 
+  <img src="./public/readme/images/AboutMe.png" alt="main title"/>
 - Change Main Image
 
 1. Put your image to `/public/assets/images`
+
    - `jpg`, `gif`, `png`
+
 2. Go to `/src/db.json`
    ```
      "aboutMe": {
@@ -200,7 +203,9 @@ $ cd ddongule-simple-portfolio
        4. Ordered List
      ```
 
-### 3. Skill Sets Section.
+### 👉 3. Skill Sets Section.
+
+  <img src="./public/readme/images/SkillSets.png" alt="main title"/>
 
 Write down your **`Professional Skill Sets`** here!
 
@@ -223,8 +228,9 @@ Write down your **`Professional Skill Sets`** here!
 
 ```
 
-### 4. Projects Section.
+### 👉 4. Projects Section.
 
+  <img src="./public/readme/images/Projects.png" alt="main title"/>
 Write down the **`Projects`** you have made!
 
 > ✨ Customize your own Projects Section!
@@ -249,8 +255,9 @@ Write down the **`Projects`** you have made!
 
 ```
 
-### 5. Timestamp Section.
+### 👉 5. Timestamp Section.
 
+  <img src="./public/readme/images/Timestamp.png" alt="main title"/>
 Write down your **`Timestamps`** you have made!
 
 > ✨ Customize your own Timestamp Section!
@@ -271,8 +278,9 @@ Write down your **`Timestamps`** you have made!
 
 ```
 
-### 6. Experiences Section.
+### 👉 6. Experiences Section.
 
+  <img src="./public/readme/images/Experiences.png" alt="main title"/>
 Write down your **`Experiences`** that you have!
 
 > ✨ Customize your own Experiences Section!
@@ -294,7 +302,7 @@ Write down your **`Experiences`** that you have!
 
 ```
 
-### 7. Education Section.
+### 👉 7. Education Section.
 
 Write down your **`Educations`**!
 
