@@ -12,7 +12,7 @@
 <div align="center">✨ Make your own portfolio! Easy and Fast. ✨</div>
 <br />
 
-[🇰🇷 한국어로 보기🇰]('./README.ko.md')
+[🇰🇷 한국어로 보기 🇰🇷](./README.ko.md)
 
 # 💫 ddongule-simple-portfolio
 
