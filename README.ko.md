@@ -207,7 +207,7 @@ $ cd ddongule-simple-portfolio
 
   <img src="./public/readme/images/SkillSets.png" alt="example-image"/>
 
-자신있는 `**Skill Sets**` 들을 적어보세요!
+자신있는 **Skill Sets** 들을 적어보세요!
 
 > ✨ SkillSets Section을 커스터마이징 해봐요!
 
@@ -231,7 +231,8 @@ $ cd ddongule-simple-portfolio
 ### 👉 4. Projects Section.
 
   <img src="./public/readme/images/Projects.png" alt="example-image"/>
-`**만들어보신 프로젝트**`에 대해서 적어보세요!
+
+**만들어보신 프로젝트**에 대해서 적어보세요!
 
 > ✨ Projects Section을 커스터마이징 해봐요!
 
@@ -258,7 +259,8 @@ $ cd ddongule-simple-portfolio
 ### 👉 5. Timestamp Section.
 
   <img src="./public/readme/images/Timestamp.png" alt="example-image"/>
-`**걸어온 길**`에 대해서 하나씩 적어보세요!
+
+**걸어온 길**에 대해서 하나씩 적어보세요!
 
 > ✨ Timestamp Section을 커스터마이징 해봐요!
 
@@ -281,7 +283,8 @@ $ cd ddongule-simple-portfolio
 ### 👉 6. Experiences Section.
 
   <img src="./public/readme/images/Experiences.png" alt="example-image"/>
-어떤 `**경험**`이 있으신지 적어보세요!
+
+어떤 **경험** 이 있으신지 적어보세요!
 
 > ✨ Experiences Section을 커스터마이징 해봐요!
 
@@ -306,7 +309,7 @@ $ cd ddongule-simple-portfolio
 
   <img src="./public/readme/images/Education.png" alt="example-image"/>
 
-어떤 `**교육**`을 받으셨는지 적어보세요!
+어떤 **교육**을 받으셨는지 적어보세요!
 
 > ✨ Education Section을 커스터마이징 해봐요!!
 
