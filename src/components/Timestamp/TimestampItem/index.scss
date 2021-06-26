@@ -110,3 +110,31 @@
     display: none;
   }
 }
+
+@include m.mobile-down {
+  .timestamp {
+    &:nth-child(odd) {
+      .timestamp__details {
+        display: block;
+
+        .tags {
+          margin: 0.225rem 0;
+          float: right;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      .timestamp__details {
+        display: block;
+
+        .tags {
+          margin: 0.225rem 0;
+        }
+      }
+    }
+  }
+}
+
+@include m.mobile {
+}
