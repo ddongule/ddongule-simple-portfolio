@@ -18,7 +18,7 @@
 
 🌟 This is a simple-portfolio template for Developers. You can customize this template to make your own portfolio. You don't have to understand the code. Just edit `db.json` and some assets(`images`, `markdowns`) then it's all done!
 
-## 💛 See Example! 👉 ([ddongule's portfolio](www.ddongule.com))
+## 💛 See Example! 👉 ([ddongule's portfolio](https://www.ddongule.com))
 
 ## 🌿 Features
 

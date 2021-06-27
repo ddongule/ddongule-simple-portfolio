@@ -16,7 +16,7 @@
 
 🌟 ddongule-simple-portfolio는 개발자를 위한 간단한 포트폴리오 템플릿입니다! 이 템플릿을 커스터마이징해 자신만의 포트폴리오를 만들어보세요! 코드를 보지 않아도 괜찮아요! `db.json`와 `이미지`, `마크다운`을 편집하면 끝나요!
 
-## 💛 예시 보러가기 👉 ([ddongule's portfolio](www.ddongule.com))
+## 💛 예시 보러가기 👉 ([ddongule's portfolio](https://www.ddongule.com))
 
 ## 🌿 기능
 
