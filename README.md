@@ -208,7 +208,7 @@ $ cd ddongule-simple-portfolio
 
   <img src="./public/readme/images/SkillSets.png" alt="example-image"/>
 
-Write down your `**Professional Skill Sets**` here!
+Write down your **Professional Skill Sets** here!
 
 > ✨ Customize your own SkillSets Section!
 
@@ -232,7 +232,7 @@ Write down your `**Professional Skill Sets**` here!
 ### 👉 4. Projects Section.
 
   <img src="./public/readme/images/Projects.png" alt="example-image"/>
-Write down the `**Projects**` you have made!
+Write down the **Projects** you have made!
 
 > ✨ Customize your own Projects Section!
 
@@ -259,7 +259,7 @@ Write down the `**Projects**` you have made!
 ### 👉 5. Timestamp Section.
 
   <img src="./public/readme/images/Timestamp.png" alt="example-image"/>
-Write down your `**Timestamps**` you have made!
+Write down your **Timestamps** you have made!
 
 > ✨ Customize your own Timestamp Section!
 
@@ -282,7 +282,7 @@ Write down your `**Timestamps**` you have made!
 ### 👉 6. Experiences Section.
 
   <img src="./public/readme/images/Experiences.png" alt="example-image"/>
-Write down your `Experiences`** that you have!
+Write down your **Experiences** that you have!
 
 > ✨ Customize your own Experiences Section!
 
@@ -306,7 +306,7 @@ Write down your `Experiences`** that you have!
 ### 👉 7. Education Section.
 
  <img src="./public/readme/images/Education.png" alt="example-image"/>
-Write down your `**Educations**`!
+Write down your **Educations**!
 
 > ✨ Customize your own Education Section!
 
