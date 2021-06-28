@@ -203,6 +203,13 @@ $ cd ddongule-simple-portfolio
        4. Ordered List
      ```
 
+  8. 링크 삽입하기
+  
+     ```
+       [보여줄 내용](https://www.your.link)
+     ```
+
+
 ### 👉 3. Skill Sets Section.
 
   <img src="./public/readme/images/SkillSets.png" alt="example-image"/>
