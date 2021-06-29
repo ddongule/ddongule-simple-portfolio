@@ -4,9 +4,8 @@
 @import './globalStyles/mixins';
 
 * {
-  font-family: Montserrat, 'Noto Sans KR', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Montserrat, 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
@@ -80,9 +79,18 @@ body,
     }
   }
 
-  .theme-container {
-    button {
-      background-image: url('./assets/static/images/sun.png');
+  .container {
+    .language {
+      select {
+        background: transparent;
+        color: color(white);
+      }
+    }
+
+    .theme-container {
+      button {
+        background-image: url('./assets/static/images/sun.png');
+      }
     }
   }
 

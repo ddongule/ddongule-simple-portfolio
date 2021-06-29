@@ -1,4 +1,5 @@
 import './global.scss';
+import './lang/i18n';
 
 import App from './App';
 import React from 'react';

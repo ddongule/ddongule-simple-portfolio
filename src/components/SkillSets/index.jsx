@@ -3,9 +3,11 @@ import './index.scss';
 import React from 'react';
 import SubTitle from '../common/SubTitle';
 import myData from '../../db.json';
+import { useTranslation } from 'react-i18next';
 
 const SkillSets = () => {
   const { skillSets } = myData;
+  const { t } = useTranslation();
 
   return (
     <>
@@ -15,13 +17,13 @@ const SkillSets = () => {
           <div className='skill-sets-container'>
             <div className='description'>
               <div className='description-item'>
-                <span className='level expert'>4 - 5</span>: 많이 사용해보았으며 자신이 있는 기술
+                <span className='level expert'>4 - 5</span>: {t('skill-sets-professional')}
               </div>
               <div className='description-item'>
-                <span className='level'>3</span>: 어느 정도 프로젝트에 적용할 수 있는 기술
+                <span className='level'>3</span>: {t('skill-sets-advanced')}
               </div>
               <div className='description-item'>
-                <span className='level'>1 - 2</span>: 현재 관심이 있어 입문 수준인 기술
+                <span className='level'>1 - 2</span>: {t('skill-sets-beginner')}
               </div>
             </div>
             {skillSets.map((set, index) => (

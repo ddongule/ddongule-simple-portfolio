@@ -1,6 +1,9 @@
 {
+  "meta": {
+    "title": "DP for your portfolio"
+  },
   "aboutMe": {
-    "name": "그루밍",
+    "name": "Min Kyung Kang",
     "nickName": "nickName!",
     "profileImg": "../assets/images/me.gif",
     "email": "mnk918p@gmail.com",
@@ -58,42 +61,42 @@
       "imgUrl": "",
       "githubUrl": "https://github.com/ddongule",
       "projectUrl": "",
-      "title": "[팀] 팀 프로젝트 제목",
+      "title": "[Team] Project Title",
       "term": "21.02.02 v1.3.0",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
-      "attribution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
+      "description": "About the project ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
+      "attribution": "How you made it.. Technology that you used.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
       "tags": ["React", "Javascript", "Java", "Spring"]
     },
     {
       "imgUrl": "/assets/images/example-image-light.png",
       "githubUrl": "https://github.com/ddongule",
       "projectUrl": "",
-      "title": "[개인] 개인 프로젝트 제목",
+      "title": "[Personal] Project Title",
       "term": "21.01.01 v1.0.0",
-      "description": "프로젝트에 대한 설명 ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
-      "attribution": "사용 기술에 대한 간략한 설명 .. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
+      "description": "About the project ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
+      "attribution": "How you made it.. Technology that you used.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
       "tags": ["React", "Javascript", "Java", "Spring"]
     }
   ],
 
   "timestamp": [
     {
-      "title": "우아한 횽제들",
+      "title": "Woowa Sisters",
       "when": "21.12 ~ ",
-      "organizer": "우아한 횽제들",
+      "organizer": "Woowa Sisters",
       "tags": ["company"]
     },
 
     {
-      "title": "2021 우아한 테크코스 3기 FE 참여",
+      "title": "2021 Woowa Tech Course 3th",
       "when": "21.02.01 - 21.11.31",
-      "organizer": "우아한 형제들",
+      "organizer": "Woowa Bros",
       "tags": ["techcourse"]
     },
     {
       "title": "우아한 대학교 (Woowa University)",
       "when": "20.08.25",
-      "organizer": "우아대학교(WWU)",
+      "organizer": "University of Woowa",
       "tags": ["graduation"]
     }
   ],
@@ -101,16 +104,16 @@
   "experiences": [
     {
       "imgUrl": "/assets/images/example-image-dark.png",
-      "title": "[개발자] 우와 기업",
+      "title": "[Software Engineer] Woowa Corp.",
       "term": "21.02 - 현재 진행 중",
-      "description": "우와 기업에서 개발자로 이런 경험들을 해 봤어요. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
+      "description": "The Experiences that I have in Woowa Corp. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
       "experienceUrl": "https://woowacourse.github.io/"
     },
     {
       "imgUrl": "/assets/images/example-image-light.png",
-      "title": "[인턴] 우와 기업",
+      "title": "[Intern] Woowa Corp.",
       "term": "19.11 - 21.03",
-      "description": "우와 기업에서 인턴으로 이런 일을 했어요. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia .. ",
+      "description": "The Experiences that I have in Woowa Corp. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia .. ",
       "experienceUrl": "https://woowacourse.github.io/"
     }
   ],
@@ -122,7 +125,7 @@
       "description": "척척박사 졸업"
     },
     {
-      "title": "잠실 고등학교",
+      "title": "잠실 고등학교 (Jamsil High School)",
       "term": "2010.03 - 2013.02",
       "description": "인문계 졸업"
     }
