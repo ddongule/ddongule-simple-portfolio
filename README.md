@@ -25,6 +25,7 @@
 - 🔥 One Page Layout
 - 🔥 Responsive Web
 - 🔥 Dark/Light Theme
+- 🔥 Language Support (Korean/English)
 
 ## 🪜 How To Use
 
@@ -205,7 +206,7 @@ $ cd ddongule-simple-portfolio
      ```
 
   8. Link
-  
+
      ```
        [TextToShow](https://www.your.link)
      ```
@@ -214,7 +215,7 @@ $ cd ddongule-simple-portfolio
 
   <img src="./public/readme/images/SkillSets.png" alt="example-image"/>
 
-Write down your __Professional Skill Sets__ here!
+Write down your **Professional Skill Sets** here!
 
 > ✨ Customize your own SkillSets Section!
 
@@ -267,7 +268,7 @@ Write down the **Projects** you have made!
 
   <img src="./public/readme/images/Timestamp.png" alt="example-image"/>
 
-Write down your __Timestamps__ you have made!
+Write down your **Timestamps** you have made!
 
 > ✨ Customize your own Timestamp Section!
 
@@ -291,7 +292,7 @@ Write down your __Timestamps__ you have made!
 
   <img src="./public/readme/images/Experiences.png" alt="example-image"/>
 
-Write down your __Experiences__ that you have!
+Write down your **Experiences** that you have!
 
 > ✨ Customize your own Experiences Section!
 
@@ -316,7 +317,7 @@ Write down your __Experiences__ that you have!
 
  <img src="./public/readme/images/Education.png" alt="example-image"/>
 
-Write down your __Educations__!
+Write down your **Educations**!
 
 > ✨ Customize your own Education Section!
 
