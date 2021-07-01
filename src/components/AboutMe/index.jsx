@@ -3,6 +3,7 @@ import './index.scss';
 import React, { useEffect, useRef, useState } from 'react';
 
 import { CSSTransition } from 'react-transition-group';
+import { LANGUAGE } from '../../constants/language';
 import SubTitle from '../common/SubTitle';
 import mmd from '../../assets/mmd';
 import myData from '../../db.json';
@@ -36,7 +37,7 @@ const AboutMe = () => {
   const aboutMyselfRef = useRef(null);
 
   useEffect(() => {
-    if (currentLanguage === 'ko-KR') {
+    if (currentLanguage === LANGUAGE.KO) {
       import('../../assets/static/markdown/aboutMySelf.ko.md')
         .then((res) => {
           fetch(res.default)
@@ -52,7 +53,7 @@ const AboutMe = () => {
       return;
     }
 
-    if (currentLanguage === 'en-US') {
+    if (currentLanguage === LANGUAGE.EN) {
       import('../../assets/static/markdown/aboutMySelf.eng.md')
         .then((res) => {
           fetch(res.default)
