@@ -6,11 +6,13 @@ import { CSSTransition } from 'react-transition-group';
 import SubTitle from '../common/SubTitle';
 import mmd from '../../assets/mmd';
 import myData from '../../db.json';
+import useLanguage from '../../hooks/useLanguage';
 
 const AboutMe = () => {
   const {
     aboutMe: { profileImg, name, email, githubUrl, blogUrl, linkedInUrl },
   } = myData;
+  const { currentLanguage } = useLanguage();
 
   const [isEmailCopied, setIsEmailCopied] = useState(false);
 
@@ -34,19 +36,38 @@ const AboutMe = () => {
   const aboutMyselfRef = useRef(null);
 
   useEffect(() => {
-    import('../../assets/static/markdown/aboutMySelf.md')
-      .then((res) => {
-        fetch(res.default)
-          .then((res) => res.text())
-          .then((res) => setAboutMySelfText(res))
-          .catch((err) => console.log(err));
-      })
-      .catch((err) => {
-        console.log(err);
+    if (currentLanguage === 'ko-KR') {
+      import('../../assets/static/markdown/aboutMySelf.ko.md')
+        .then((res) => {
+          fetch(res.default)
+            .then((res) => res.text())
+            .then((res) => setAboutMySelfText(res))
+            .catch((err) => console.log(err));
+        })
+        .catch((err) => {
+          console.log(err);
 
-        return '';
-      });
-  }, [setAboutMySelfText]);
+          return '';
+        });
+      return;
+    }
+
+    if (currentLanguage === 'en-US') {
+      import('../../assets/static/markdown/aboutMySelf.eng.md')
+        .then((res) => {
+          fetch(res.default)
+            .then((res) => res.text())
+            .then((res) => setAboutMySelfText(res))
+            .catch((err) => console.log(err));
+        })
+        .catch((err) => {
+          console.log(err);
+
+          return '';
+        });
+      return;
+    }
+  }, [currentLanguage]);
 
   if (aboutMyselfRef.current) {
     aboutMyselfRef.current.innerHTML = mmd(aboutMySelfText);

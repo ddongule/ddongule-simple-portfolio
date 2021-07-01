@@ -1,7 +1,8 @@
+import { Helmet } from 'react-helmet';
 import Home from './components/pages/Home';
+import { LanguageContextProvider } from './context/languageContext';
 import React from 'react';
 import { ThemeChangeContextProvider } from './context/themeChangeContext';
-import { Helmet } from 'react-helmet';
 import myData from './db.json';
 
 function App() {
@@ -10,12 +11,16 @@ function App() {
   } = myData;
 
   return (
-    <ThemeChangeContextProvider>
+    <>
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Home />
-    </ThemeChangeContextProvider>
+      <ThemeChangeContextProvider>
+        <LanguageContextProvider>
+          <Home />
+        </LanguageContextProvider>
+      </ThemeChangeContextProvider>
+    </>
   );
 }
 
