@@ -38,7 +38,7 @@ const AboutMe = () => {
 
   useEffect(() => {
     if (currentLanguage === LANGUAGE.KO) {
-      import('../../assets/static/markdown/aboutMySelf.ko.md')
+      import(`../../assets/static/markdown/aboutMySelf.korean.md`)
         .then((res) => {
           fetch(res.default)
             .then((res) => res.text())
@@ -54,7 +54,7 @@ const AboutMe = () => {
     }
 
     if (currentLanguage === LANGUAGE.EN) {
-      import('../../assets/static/markdown/aboutMySelf.eng.md')
+      import(`../../assets/static/markdown/aboutMySelf.english.md`)
         .then((res) => {
           fetch(res.default)
             .then((res) => res.text())

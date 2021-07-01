@@ -1,11 +1,14 @@
 import { createContext, useState } from 'react';
 
-import { LANGUAGE } from '../constants/language';
+import myData from '../db.json';
 
 export const LanguageContext = createContext(null);
 
 export const LanguageContextProvider = ({ children }) => {
-  const [currentLanguage, setCurrentLanguage] = useState(LANGUAGE.KO);
+  const {
+    meta: { defaultLanguage },
+  } = myData;
+  const [currentLanguage, setCurrentLanguage] = useState(defaultLanguage);
 
   return (
     <LanguageContext.Provider value={{ currentLanguage, setCurrentLanguage }}>
