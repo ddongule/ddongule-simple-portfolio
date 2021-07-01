@@ -91,6 +91,38 @@ $ cd ddongule-simple-portfolio
       }
     ```
 
+### 🇰🇷🇺🇸 0. 기본 언어를 고르세요!
+
+초기 언어는 **영어**로 선택되어 있습니다!
+
+**🔥 한국어/영어 중 기본 언어를 고르실 수 있습니다.**
+
+  <img src="./public/readme/images/language-select.png" alt="example-image"/>
+
+- `/src/db.json`로 가세요.
+
+  #### 🇺🇸 [Default] 기본 언어를 영어로 세팅하기.
+
+  ```
+      "meta": {
+        ...
+        "defaultLanguage": "English"
+        ...
+      }
+  ```
+
+  #### 🇰🇷 기본 언어를 한국어로 세팅하기.
+
+  > 아래 코드를 그대로 복사, 붙여넣기 하시면 됩니다! (대/소문자를 구별하기 때문에 오타가 생기면 동작하지 않을 수 있습니다.)
+
+  ```
+      "meta": {
+        ...
+        "defaultLanguage": "Korean"
+        ...
+      }
+  ```
+
 ### 👉 1. Main Title Section.
 
   <img src="./public/readme/images/mainTitle.png" alt="example-image"/>
@@ -126,7 +158,9 @@ $ cd ddongule-simple-portfolio
 
 #### Introduction Text 바꾸기
 
-- `/src/assets/static/markdown/aboutMySelf.md`로 가세요.
+- `/src/assets/static/markdown/aboutMySelf.english.md`로 가세요.
+
+  - (+) 한국어 버전을 사용하시려면, `aboutMySelf.korean.md`도 바꾸어 주셔야 합니다.
 
   > **Markdown으로 작성해보세요! 그럼 아래처럼 보일거에요!**
 

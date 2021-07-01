@@ -93,6 +93,38 @@ $ cd ddongule-simple-portfolio
       }
     ```
 
+### 🇰🇷🇺🇸 0. Select Default Language!
+
+Default Language : **English**
+
+**🔥 You can Select whether to use English or Korean**
+
+  <img src="./public/readme/images/language-select.png" alt="example-image"/>
+
+- Go to `/src/db.json`
+
+  #### 🇺🇸 [Default] Set Default Language as English
+
+  ```
+      "meta": {
+        ...
+        "defaultLanguage": "English"
+        ...
+      }
+  ```
+
+  #### 🇰🇷 Set Default: Korean
+
+  > If you want to use Korean as your default language, just copy and paste the code below the line.
+
+  ```
+      "meta": {
+        ...
+        "defaultLanguage": "Korean"
+        ...
+      }
+  ```
+
 ### 👉 1. Main Title Section.
 
   <img src="./public/readme/images/mainTitle.png" alt="example-image"/>
@@ -110,6 +142,7 @@ $ cd ddongule-simple-portfolio
 ### 👉 2. About Me Section.
 
   <img src="./public/readme/images/AboutMe.png" alt="example-image"/>
+
 - Change Main Image
 
 1. Put your image to `/public/assets/images`
@@ -127,7 +160,9 @@ $ cd ddongule-simple-portfolio
 
 - Change Introduction Text
 
-- Go to `/src/assets/static/markdown/aboutMySelf.md`
+- 🇺🇸 Go to `/src/assets/static/markdown/aboutMySelf.english.md`
+
+  - (+) To use the Korean version, you should write `aboutMySelf.korean.md` too.
 
   > **Write With Markdown! Then You'll See..**
 
