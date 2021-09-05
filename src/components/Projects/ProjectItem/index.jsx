@@ -1,7 +1,12 @@
 import './index.scss';
+import '../../../sharedStyles/markdown.scss';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import parse from "html-react-parser";
 import noImage from '../../../assets/static/images/no-image.png'
+import useModal from '../../../hooks/useModal';
+import ModalPortal from '../../ModalPortal';
+import mmd from '../../../assets/mmd';
 
 const ProjectItem = ({
   title,
@@ -11,18 +16,69 @@ const ProjectItem = ({
   description,
   attribution,
   projectUrl,
+  projectDetailMdName,
   githubUrl,
+  isModalType,
 }) => {
+  const { isModalShown, showModal, hideModal } = useModal();
+  const [modalContent, setModalContent] = useState("");
   const addDefaultSrc=({target}) => (target.src = noImage)
+
+  const ProjectDetailWithLink = ({ children }) => 
+    <a
+      className='project__details'
+      href={projectUrl}
+      target='_blank'
+      rel='noopener noreferrer'
+    >{children}</a>
+
+  const ProjectDetailWithModal = ({ children }) => {
+    return (
+      <>
+      <button className='project__details' onClick={showModal}>
+        {children}  
+      </button>
+      {isModalShown && 
+        <ModalPortal onClose={hideModal}>
+          <div className="markdown">
+            {parse(modalContent)}
+          </div>
+        </ModalPortal>
+      }
+      </>
+    )
+  }
+
+  const ProjectDetail = ({ children }) => 
+    isModalType 
+      ? <ProjectDetailWithModal children={children} />
+      : <ProjectDetailWithLink children={children} />
+
+  useEffect(() => {
+    if (!projectDetailMdName) return;
+
+    import(`../../../assets/static/markdown/${projectDetailMdName}`)
+      .then((res) => {
+        fetch(res.default)
+          .then((res) => res.text())
+          .then((res) => setModalContent(mmd(res)))
+          .catch((err) => console.log(err));
+      })
+      .catch((err) => {
+        console.log(err);
+
+        return '';
+      });
+
+  }, [projectDetailMdName]);
+
+  useEffect(() => {
+    document.body.style.overflow = isModalShown ? "hidden" : "unset";
+  }, [isModalShown]);
 
   return (
     <div className='project'>
-      <a
-        className='project__details'
-        href={projectUrl}
-        target='_blank'
-        rel='noopener noreferrer'
-      >
+      <ProjectDetail>
         <div className='item__image'>
           <img src={imgUrl} alt={`${title} logo 이미지`} onError={addDefaultSrc} />
         </div>
@@ -40,7 +96,7 @@ const ProjectItem = ({
             ))}
           </div>
         </div>
-      </a>
+      </ProjectDetail>
       {githubUrl && (
         <div className='project__links'>
           <a href={githubUrl}>

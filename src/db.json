@@ -66,7 +66,9 @@
       "term": "21.02.02 v1.3.0",
       "description": "About the project ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
       "attribution": "How you made it.. Technology that you used.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
-      "tags": ["React", "Javascript", "Java", "Spring"]
+      "tags": ["React", "Javascript", "Java", "Spring"],
+      "isModalType": false,
+      "detailModalMdName": ""
     },
     {
       "imgUrl": "/assets/images/example-image-light.png",
@@ -76,7 +78,9 @@
       "term": "21.01.01 v1.0.0",
       "description": "About the project ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
       "attribution": "How you made it.. Technology that you used.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
-      "tags": ["React", "Javascript", "Java", "Spring"]
+      "tags": ["React", "Javascript", "Java", "Spring"],
+      "isModalType": true,
+      "detailModalMdName": "aboutMySelf.korean.md"
     }
   ],
 
