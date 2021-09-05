@@ -1,4 +1,5 @@
 import './index.scss';
+import '../../sharedStyles/markdown.scss';
 
 import React, { useEffect, useRef, useState } from 'react';
 
@@ -124,7 +125,7 @@ const AboutMe = () => {
         </div>
         <div className='introduce'>
           <div className='subtitle'>Let me Introduce myself</div>
-          <div className='about' ref={aboutMyselfRef}></div>
+          <div className='markdown about' ref={aboutMyselfRef}></div>
         </div>
       </div>
     </>
