@@ -16,9 +16,9 @@ const ProjectItem = ({
   description,
   attribution,
   projectUrl,
-  projectDetailMdName,
+  detailMdName,
   githubUrl,
-  isModalType,
+  useDetailMd,
 }) => {
   const { isModalShown, showModal, hideModal } = useModal();
   const [modalContent, setModalContent] = useState("");
@@ -50,14 +50,14 @@ const ProjectItem = ({
   }
 
   const ProjectDetail = ({ children }) => 
-    isModalType 
+    useDetailMd 
       ? <ProjectDetailWithModal children={children} />
       : <ProjectDetailWithLink children={children} />
 
   useEffect(() => {
-    if (!projectDetailMdName) return;
+    if (!detailMdName) return;
 
-    import(`../../../assets/static/markdown/${projectDetailMdName}`)
+    import(`../../../assets/static/markdown/${detailMdName}`)
       .then((res) => {
         fetch(res.default)
           .then((res) => res.text())
@@ -69,8 +69,7 @@ const ProjectItem = ({
 
         return '';
       });
-
-  }, [projectDetailMdName]);
+  }, [detailMdName]);
 
   useEffect(() => {
     document.body.style.overflow = isModalShown ? "hidden" : "unset";

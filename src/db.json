@@ -62,25 +62,25 @@
       "imgUrl": "",
       "githubUrl": "https://github.com/ddongule",
       "projectUrl": "",
+      "useDetailMd": false, 
+      "detailMdName": "",
       "title": "[Team] Project Title",
       "term": "21.02.02 v1.3.0",
       "description": "About the project ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
       "attribution": "How you made it.. Technology that you used.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
-      "tags": ["React", "Javascript", "Java", "Spring"],
-      "isModalType": false,
-      "detailModalMdName": ""
+      "tags": ["React", "Javascript", "Java", "Spring"]
     },
     {
       "imgUrl": "/assets/images/example-image-light.png",
       "githubUrl": "https://github.com/ddongule",
       "projectUrl": "",
+      "useDetailMd": true, 
+      "detailMdName": "projectDetailExample.md",
       "title": "[Personal] Project Title",
       "term": "21.01.01 v1.0.0",
       "description": "About the project ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
       "attribution": "How you made it.. Technology that you used.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
-      "tags": ["React", "Javascript", "Java", "Spring"],
-      "isModalType": true,
-      "detailModalMdName": "aboutMySelf.korean.md"
+      "tags": ["React", "Javascript", "Java", "Spring"]
     }
   ],
 

@@ -16,7 +16,7 @@ const Modal = ({ onClose, children }) => {
         <button type="button" onClick={onClose}>
           <CancelNoCircleIcon />
         </button>
-        <div className="modal-inner modal-content">
+        <div className="modal-content">
           {children}
         </div>
       </div>
