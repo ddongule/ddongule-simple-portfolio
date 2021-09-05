@@ -1,0 +1,1 @@
+export { ReactComponent as CancelNoCircleIcon } from "./cancel-no-circle-icon.svg";
