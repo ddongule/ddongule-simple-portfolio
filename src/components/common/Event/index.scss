@@ -17,19 +17,20 @@
   .item__image {
     min-width: 4rem;
     max-width: 6rem;
-    border: 1px solid m.color(grey-0);
     border-radius: v.$border-radius;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+    // border: 1px solid m.color(grey-0);
+    overflow: hidden;
+    box-shadow: 0 0 0 1px m.color(grey-0);
 
     img {
       object-fit: contain;
       box-shadow: v.$box-shadow;
       width: 100%;
       height: auto;
-      border-radius: v.$border-radius;
       background: m.color(white);
     }
   }
