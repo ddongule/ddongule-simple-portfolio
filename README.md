@@ -288,6 +288,8 @@ Write down the **Projects** you have made!
         "imgUrl": "/assets/images/exmaple.png",
         "githubUrl": "https://github.com/ddongule",
         "projectUrl": "www.ddongule.com",
+        "useDetailMd": false, 
+        "detailMdName": "",
         "title": "ddongule-simple-portfolio",
         "term": "21.02.02 v1.3.0",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
@@ -298,6 +300,20 @@ Write down the **Projects** you have made!
     ]
 
 ```
+
+- For clicks on a project item, you can choose whether to go to the `projectUrl` link or show the markdown that describes the project in the modal.
+- If `useDetailMd` is false, you can use project item as a project link.
+- If `useDetailMd` is true, you can use project item as a button that shows a modal in which `detailMdName` file describes the project.
+  - Put your markdown file to `src/assets/static/markdown`.
+  - Write the file name to `projects.detailMdName`.
+  - Example
+    ```
+    {
+      ...,
+      detailMdName: "projectDetail.md",
+      ...
+    }
+    ```
 
 ### 👉 5. Timestamp Section.
 

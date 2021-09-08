@@ -286,6 +286,8 @@ $ cd ddongule-simple-portfolio
         "imgUrl": "/assets/images/exmaple.png",
         "githubUrl": "https://github.com/ddongule",
         "projectUrl": "www.ddongule.com",
+        "useDetailMd": false, 
+        "detailMdName": "",
         "title": "ddongule-simple-portfolio",
         "term": "21.02.02 v1.3.0",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia ..",
@@ -296,6 +298,20 @@ $ cd ddongule-simple-portfolio
     ]
 
 ```
+
+- 프로젝트 아이템 클릭에 대해 `projectUrl` 링크로 이동할지 모달에 프로젝트를 설명하는 마크다운을 보여줄지 선택할 수 있습니다.
+- 만약 `useDetailMd`가 false 라면, 프로젝트 아이템을 프로젝트 링크로 사용할 수 있습니다.
+- 만약 `useDetailMd`가 true 라면, 프로젝트 아이템을 모달을 표시하는 버튼으로 사용할 수 있습니다. 이때, 모달에는 `detailMdName` 파일에 해당하는 내용이 보여집니다.
+  - 프로젝트를 설명하는 마크다운 파일을 `src/assets/static/markdown`에 넣어주세요.
+  - 위 마크다운 파일의 이름을 `projects.detailMdName`에 적어주세요.
+  - 예시
+    ```
+    {
+      ...,
+      detailMdName: "projectDetail.md",
+      ...
+    }
+    ```
 
 ### 👉 5. Timestamp Section.
 

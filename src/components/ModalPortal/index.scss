@@ -1,0 +1,58 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; 
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s forwards;
+  
+}
+
+.modal-inner {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: relative;
+  
+  
+  button {
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    
+    svg {
+      transform: scale(2);
+    }
+    
+    &:active {
+      transform: scale(0.98)
+    }
+  }
+}
+
+.modal-content {
+  padding: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  max-width: 31.25rem;
+  min-height: 25rem;
+  max-height: 37.5rem;
+  overflow: scroll;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
