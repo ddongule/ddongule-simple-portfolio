@@ -249,14 +249,11 @@
         color: m.color(grey-10);
         display: inline-block;
         padding: 0.2em 0.4em;
-        margin: 0.125rem 0.225rem;
+        margin: 0 0 0.225rem 0.125rem;
         height: fit-content;
       }
 
       p {
-        display: flex;
-        flex-flow: wrap;
-        align-items: center;
         margin-bottom: 5px;
       }
 
